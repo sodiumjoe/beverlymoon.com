@@ -1,9 +1,9 @@
 ## with bev
-* color palette
-  * bg color
-  * main text color
-  * primary color (links, buttons, highlights)
-  * secondary color
++ color palette
+  + bg color
+  + main text color
+  + primary color (links, buttons, highlights)
+  + secondary color
 + images
   + headers
     + about
@@ -18,6 +18,10 @@
 + logo
 
 ## tech
+
+* bugs:
+  * max-height on lightbox
+  * layout gets weird when click on lightbox
 
 * refactor/divide up css
 * optimizations

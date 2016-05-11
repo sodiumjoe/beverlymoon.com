@@ -99,29 +99,33 @@ export const projects = [{
     description: ''
   }]
 }, {
-  id: 'ora',
-  title: 'Ora',
+  id: 'hora',
+  title: 'Hora',
   description: 'Amplifying family life through light & sound',
   lead: 'Cinco wanted to showcase our holistic design approach with a relevant and inspiring, but feasible product/technology concept that epitomized our brand, product and digital thinking.',
   content: '<p>I led a passion project to solve problems in the homes of modern families who have to keep track of hectic schedules, morning and bedtime routines, and general chaos.</p><p>We set out to design a product that integrates light and sound to help simplify and manage daily home routines, while complementing the home.</p><p>The result was Ora, a multi-functional smart light and speaker that can be remotely controlled from your smart phone.</p><p>Ora can act as a nightlight, an ambient light, an alarm clock, a timer, or a sound machine. Custom light animation and sounds create specific moods that refine our daily routines. The simple, rounded form of the light and cone base can fit in a child’s bedroom just as easily as in an adult’s, and a clever silicone lanyard goes through the inner shaft of the light, making it easy to carry and hang.</p>',
   items: [{
-    src: '/img/HORA1.jpg',
-    description: ''
+    src: '/img/HORA_A.jpg'
   }, {
-    src: '/img/HORA2.jpg',
-    description: ''
+    src: '/img/HORA_B.jpg'
   }, {
-    src: '/img/HORA3.jpg',
-    description: ''
+    src: '/img/HORA_C.jpg'
   }, {
-    src: '/img/HORA4.jpg',
-    description: ''
+    src: '/img/HORA_D.jpg'
   }, {
-    src: '/img/HORA5.jpg',
-    description: ''
+    src: '/img/HORA_E.jpg'
   }, {
-    src: '/img/HORA6.jpg',
-    description: ''
+    src: '/img/HORA_E2.jpg'
+  }, {
+    src: '/img/HORA_F.jpg'
+  }, {
+    src: '/img/HORA_G.jpg'
+  }, {
+    src: '/img/HORA_H.jpg'
+  }, {
+    src: '/img/HORA_I.jpg'
+  }, {
+    src: '/img/HORA_J.jpg'
   }]
 }, {
   id: 'jaybird',

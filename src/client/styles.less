@@ -513,41 +513,19 @@ section {
   }
 }
 
+.lead {
+  font-size: @font-size-h3;
+}
+
 .text-content-container {
   max-width: @screen-md;
+  margin: auto;
   display: block;
   padding: 0 20px;
+  box-sizing: border-box;
   h3 {
     text-align: center;
-    max-width: 422px;
     display: inline-block;
-  }
-  @media (min-width: @screen-md-min) {
-    .row;
-    align-items: center;
-    h3 {
-      padding: 0 @gutter-width * 2;
-      flex-basis: 0;
-      flex-grow: 1;
-      flex-shrink: 1;
-    }
-    .lead {
-      font-size: @font-size-h3;
-    }
-    .text-content {
-      padding: 0 @gutter-width 0;
-      flex-basis: 0;
-      flex-grow: 2;
-      flex-shrink: 2;
-      .column;
-      padding: 0 @gutter-width * 2;
-      p {
-        padding: 0;
-        margin-bottom: 0;
-        max-width: @screen-sm / 2;
-      }
-    }
-    margin-bottom: @gutter-width;
   }
 }
 
@@ -558,6 +536,7 @@ main {
   text-align: center;
   justify-content: center;
   max-width: @screen-md;
+  margin: auto;
   figure {
     margin: 0;
     box-sizing: border-box;
