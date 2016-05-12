@@ -153,17 +153,19 @@ export const projects = [{
     description: ''
   }]
 }, {
-  id: 'native',
-  title: 'Native',
-  description: 'Mini future-classic footwear',
-  lead: 'Native is a shoe brand known for their future-classic waterproof rubber-foam shoes.',
-  content: '<p>They were eager to expand their successful children’s line with a kid-sized version of their newest silhouette, the Apollo. Not satisfied with a “just shrink it” approach, our team designed proportions and features that would make kids happy and keep them stylish. We looked for features like pull-on ribbons, right/left shoe indicators, and elastic laces that would help kids put their shoes on independently. The result was a range of modern concepts that stayed true to the original Apollo lines but mixed in new materials and added features that any kid (or parent) can appreciate.</p>',
+  id: 'teethers',
+  description: 'Objects for the modern baby and her parents',
+  lead: 'When I became a parent, I quickly realized that the market for baby products is filled with useless and unsightly junk.',
+  title: 'Teethers',
+  content: '<p>I started to build quite a collection of products I wasn&rsquo;t happy with because I had no other choice. And since my baby loves toys that she can gnaw on to relieve her teething pain, these things fill our home: a few on the dining table, two on the floor, and probably three or foor behind the couch. Like any other product, I want these toys to complement my home, so I took this on as a personal design project, and I&rsquo;m excited to design and produce teethers with a modern aesthetic. It&rsquo;s currently a work in progress.</p>',
   items: [{
-    src: '/img/NATIVE1.jpg',
-    description: ''
+    src: '/img/TEETHERS1.jpg'
   }, {
-    src: '/img/NATIVE2.jpg',
-    description: ''
+    src: '/img/TEETHERS2.jpg'
+  }, {
+    src: '/img/TEETHERS3.jpg'
+  }, {
+    src: '/img/TEETHERS4.jpg'
   }]
 }, {
   id: 'ms',

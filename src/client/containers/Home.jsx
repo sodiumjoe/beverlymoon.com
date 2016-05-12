@@ -10,7 +10,7 @@ const Home = () => (
     <main>
       <Figure
         link='/about'
-        src='/img/about.jpg'
+        src='/img/Photo.jpg'
         title='About'
         description='A quick snapshot'
       />
