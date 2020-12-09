@@ -1,0 +1,58 @@
+figure .placeholder-container {
+  background-color: var(--white);
+}
+
+figure .placeholder-container a {
+  display: block;
+}
+
+figure .placeholder-container img {
+  box-shadow: 0 1px 3px rgba(0,0,0,0.3);
+  background-color: var(--gray-lighter);
+  display: block;
+  width: 100%;
+  animation: fadein .3s ease-in;
+}
+
+figure .placeholder {
+  padding-top: 56.3%;
+  width: 456px;
+  &.header {
+    padding-top: 24.363898223715794%;
+  }
+}
+
+figure {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0 calc(var(--padding) * 2) var(--gutter-width);
+  width: 50%;
+}
+
+@media (max-width: 480px) {
+  figure {
+    padding: 0 var(--padding) var(--gutter-width);
+    width: 100%;
+  }
+  figure a > img {
+    opacity: 1;
+  }
+}
+
+figure h3 {
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+
+figure p {
+  margin-top: 0;
+}
+
+figure a > img {
+  opacity: .8;
+  transition: opacity .25s ease-in-out;
+}
+
+figure a > img:hover {
+  opacity: 1;
+}

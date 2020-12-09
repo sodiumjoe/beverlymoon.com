@@ -1,0 +1,27 @@
+footer {
+  background-color: var(--white);
+  text-align: center;
+  flex-shrink: 0;
+}
+
+footer .contact {
+  font-size: var(--font-size-small);
+  color: var(--gray-lighter);
+  padding: calc(var(--gutter-width) * 2) 0;
+  background-color: var(--gray-darker);
+  font-family: var(--sans);
+  letter-spacing: 2px;
+}
+
+footer .contact p {
+  font-size: var(--font-size-small);
+  max-width: 100%;
+  padding-bottom: calc(var(--gutter-width) / 2);
+  margin: 0;
+  font-family: var(--sans);
+}
+
+footer .contact address {
+  display: inline;
+  font-style: normal;
+}

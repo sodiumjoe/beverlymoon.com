@@ -1,0 +1,119 @@
+@import 'normalize.css';
+
+.wf-loading {
+  opacity: 0;
+}
+
+.wf-active {
+  animation: fadein .3s ease-in;
+}
+
+html {
+  overflow-y: scroll;
+}
+
+body {
+  margin: 0;
+  color: var(--gray-dark);
+}
+
+html, body, #app {
+  height: 100%;
+}
+
+:root {
+  /* main */
+  --padding: 10px;
+  --gutter-width: calc(var(--padding) * 3);
+
+  /* colors */
+  --primary-color:          #EC7C5D;
+  --white:                  #fff;
+  --gray-base:              #000;
+  --gray-darker:            #222;
+  --gray-dark:              #333;
+  --gray:                   #555;
+  --gray-light:             #777;
+  --gray-lighty:            #777;
+  --gray-lighter:           #eee;
+
+  /* type */
+  --font-size-base:          14px;
+  --font-size-large:         18px;
+  --font-size-small:         12px;
+
+  --font-size-h1:            36px;
+  --font-size-h2:            30px;
+  --font-size-h3:            24px;
+  --font-size-h4:            18px;
+  --font-size-h5:            var(--font-size-base);
+  --font-size-h6:            12px;
+
+  --sans: proxima-nova, 'Helvetica Neue', sans-serif;
+  --serif: adobe-garamond-pro, Garamond;
+
+  /* screen sizes */
+
+  --screen-xs:                  480px;
+  --screen-xs-min:              var(--screen-xs);
+  --screen-sm:                  768px;
+  --screen-sm-min:              var(--screen-sm);
+
+  /* Medium screen / desktop */
+  /*** Deprecated `--screen-md` as of v3.0.1 */
+  --screen-md:                  992px;
+  --screen-md-min:              var(--screen-md);
+  /*** Deprecated `--screen-desktop` as of v3.0.1 */
+  --screen-desktop:             var(--screen-md-min);
+
+  /* Large screen / wide desktop */
+  /*** Deprecated `--screen-lg` as of v3.0.1 */
+  --screen-lg:                  1200px;
+  --screen-lg-min:              var(--screen-lg);
+  /*** Deprecated `--screen-lg-desktop` as of v3.0.1 */
+  --screen-lg-desktop:          var(--screen-lg-min);
+
+  /* So media queries don't overlap when required, provide a maximum */
+  --screen-xs-max:              calc(var(--screen-sm-min) - 1);
+  --screen-sm-max:              calc(var(--screen-md-min) - 1);
+  --screen-md-max:              calc(var(--screen-lg-min) - 1);
+
+  --button-dim: calc(var(--padding) * 2);
+  --hamburger-line-height: calc(var(--button-dim) / 10);
+}
+
+a, a:visited {
+  text-decoration: none;
+  color: var(--primary-color);
+}
+
+p, h2, h4, h6 {
+  font-family: var(--serif);
+}
+
+p {
+  font-size: var(--font-size-large);
+}
+
+h1, h3, h5 {
+  font-family: var(--sans);
+}
+
+h1 { font-size: var(--font-size-h1); }
+h2 { font-size: var(--font-size-h2); font-weight: 400; }
+h3 { font-size: var(--font-size-h3); }
+h4 { font-size: var(--font-size-h4); }
+h5 { font-size: var(--font-size-h5); }
+h6 { font-size: var(--font-size-h6); }
+
+h1, h3 { font-weight: 400; }
+
+h1, h2, h3, p {
+  padding: 0;
+  margin: calc(var(--gutter-width) / 2) 0;
+}
+
+h3 {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}

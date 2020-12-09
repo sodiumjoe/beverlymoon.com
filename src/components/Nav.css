@@ -1,0 +1,201 @@
+/* nav */
+#root {
+  transition: .14s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+#root.menu-open {
+  height: 100%;
+  transform: translate3d(-160px,0,0);
+}
+
+#mobile-nav {
+  position: fixed;
+  height: 100%;
+  width: 160px;
+  left: 100%;
+  padding-top: var(--padding);
+  background-color: var(--gray-darker);
+}
+
+#mobile-nav .nav-links li a {
+  color: var(--white);
+  display: block;
+}
+
+#mobile-nav .nav-links li a.active {
+  color: var(--gray-darker);
+  background-color: var(--white);
+}
+
+.nav-links {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  font-size: var(--font-size-base);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-family: var(--sans);
+}
+
+.nav-links li > a {
+  color: var(--gray-darker);
+  padding: var(--padding) var(--gutter-width);
+}
+
+.nav-links li > a.not-found {
+  margin: var(--padding);
+}
+
+#nav {
+  box-sizing: border-box;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  width: 100%;
+  padding: var(--gutter-width) 0 var(--padding) var(--gutter-width);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#nav #logo svg {
+  display: block;
+  overflow: visible;
+  fill: var(--gray-darker);
+  height: calc(var(--padding) * 2);
+}
+
+#nav #logo svg.portfolio {
+  fill: var(--gray-darker);
+}
+
+#nav .nav-links {
+  display: flex;
+  flex-direction: row;
+}
+
+#nav .nav-links li > a {
+  color: var(--gray-darker);
+  padding: var(--padding);
+}
+
+#nav .nav-links li > a.active {
+  font-weight: bold;
+}
+
+#nav .nav-links li:last-child > a {
+  margin-right: calc(var(--gutter-width) - var(--padding));
+  padding: var(--padding);
+}
+
+@media (max-width: 768px) {
+  #nav #logo svg {
+    height: 18px;
+  }
+
+  #nav .nav-links {
+    display: none;
+  }
+}
+
+.button:focus {
+  outline: none;
+}
+
+.button span {
+  top: calc(calc(var(--button-dim) / 2) - calc(var(--hamburger-line-height) / 2));
+  left: 0;
+  right: 0;
+}
+
+.button span, .button span::before, .button span::after {
+  height: var(--hamburger-line-height);
+  display: block;
+  position: absolute;
+  background-color: var(--primary-color);
+}
+
+.button span::before, .button span::after {
+  left: 0;
+  width: 100%;
+  content: "";
+}
+
+.hamburger {
+  overflow: hidden;
+  background-color: transparent;
+  padding: 0;
+  width: var(--button-dim);
+  height: var(--button-dim);
+  font-size: 0;
+  text-indent: -9999px;
+  box-shadow: none;
+  border: none;
+  cursor: pointer;
+  display: none;
+  position: relative;
+  margin-right: var(--gutter-width);
+}
+
+.hamburger:focus {
+  outline: none;
+}
+
+.hamburger span {
+  top: calc(calc(var(--button-dim) / 2) - calc(var(--hamburger-line-height) / 2));
+  left: 0;
+  right: 0;
+  transition: background 0s .2s;
+}
+
+.hamburger span, .hamburger span::before, .hamburger span::after {
+  height: var(--hamburger-line-height);
+  display: block;
+  position: absolute;
+  background-color: var(--primary-color);
+}
+
+.hamburger span::before, .hamburger span::after {
+  left: 0;
+  width: 100%;
+  content: "";
+}
+
+.hamburger span::before {
+  top: calc(calc(var(--button-dim) / 2) - calc(var(--hamburger-line-height) * 2));
+  transition: top .2s .2s, transform .2s 0s;
+}
+
+.hamburger span::after {
+  bottom: calc(calc(var(--button-dim) / 2) - calc(var(--hamburger-line-height) * 2));
+  transition: bottom .2s .2s, transform .2s 0s;
+}
+
+/* active state, i.e. menu open */
+
+.hamburger.is-active span {
+  background: none;
+}
+
+.hamburger.is-active span::before {
+  top: 0;
+  transform: rotate(45deg);
+  transition: top .2s 0s, transform .2s .2s;
+}
+
+.hamburger.is-active span::after {
+  bottom: 0;
+  transform: rotate(-45deg);
+  transition: bottom .2s 0s, transform .2s .2s;
+}
+
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+}
